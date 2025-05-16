@@ -10,6 +10,25 @@ body{
   cursor: url('cursor/normal.cur'), auto;
 }
 
+ .circle {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 30px solid transparent;
+      background-image: linear-gradient(
+        to bottom,
+        #74ACDF 0%,
+        #74ACDF 33.33%,
+        white 33.33%,
+        white 66.66%,
+        #74ACDF 66.66%,
+        #74ACDF 100%
+      );
+      background-clip: border-box;
+      -webkit-mask-image: radial-gradient(circle, transparent 70px, black 71px);
+      mask-image: radial-gradient(circle, transparent 70px, black 71px);
+      background-origin: border-box;
+    }
 #volver-home button {
   cursor: url('cursor/pointer.cur'), pointer;
 }
@@ -73,13 +92,34 @@ body{
 }
 
 .item1{
-  background: linear-gradient(0deg, rgb(255, 30, 0) -10%, rgba(0,0,0,0.21052170868347342) 100%);
+  background: linear-gradient(0deg, #ff1e00 -10%, rgba(0,0,0,0.21052170868347342) 100%);
   backdrop-filter: blur(20px);
 }
 
 .item {
   width: 20em;
   background: linear-gradient(90deg, rgb(255, 30, 0) 7%, rgba(0,0,0,0.21052170868347342) 39%);
+  backdrop-filter: blur(20px);
+  cursor: url('cursor/pointer.cur'), pointer;
+}
+
+#item1,.about-item {
+  background: linear-gradient(90deg, #ffb213 7%, rgba(0,0,0,0.21052170868347342) 39%);
+  backdrop-filter: blur(20px);
+  cursor: url('cursor/pointer.cur'), pointer;
+}
+#item2 {
+  background: linear-gradient(90deg, #05ff94 7%, rgba(0,0,0,0.21052170868347342) 39%);
+  backdrop-filter: blur(20px);
+  cursor: url('cursor/pointer.cur'), pointer;
+}
+#item3 {
+  background: linear-gradient(90deg, #fc6535 7%, rgba(0,0,0,0.21052170868347342) 39%);
+  backdrop-filter: blur(20px);
+  cursor: url('cursor/pointer.cur'), pointer;
+}
+#item4 {
+  background: linear-gradient(90deg, #fd8000 7%, rgba(0,0,0,0.21052170868347342) 39%);
   backdrop-filter: blur(20px);
   cursor: url('cursor/pointer.cur'), pointer;
 }

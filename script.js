@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
   videoReversa.currentTime = 0;
 
   function reproducirVideo(video) {
-    video.playbackRate = 2.0;
+    video.playbackRate = 3.0;
     video.play();
   }
 
@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
       video1.classList.add('hidden');
       videoReversa.classList.remove('hidden');
       video1.currentTime = 0;
-    }, 2300);
+    }, 1600);
   }
   
   const goBackMenu = () => {
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
       video1.classList.remove('hidden');
       videoReversa.classList.add('hidden');
       videoReversa.currentTime = 0;
-    }, 2300);
+    }, 1600);
   }
 
 
