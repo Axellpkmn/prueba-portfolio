@@ -89,7 +89,6 @@ body{
   font-family: cod;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-  font-size: 1.5em;
 
 }
 
@@ -117,7 +116,7 @@ body{
   backdrop-filter: blur(20px);
   cursor: url('cursor/pointer.cur'), pointer;
 }
-#item2 {
+#item2, .servicios-item {
   background: linear-gradient(90deg, #05ff94 -3%, rgba(0,0,0,0.21052170868347342) 39%);
   backdrop-filter: blur(20px);
   cursor: url('cursor/pointer.cur'), pointer;
