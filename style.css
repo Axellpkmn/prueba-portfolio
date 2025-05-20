@@ -84,6 +84,15 @@ body{
 
 }
 
+.inventario-about h2 {
+  color: white;
+  font-family: cod;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 1.5em;
+
+}
+
 .inventario div {
   display: flex;
   flex-direction: column;
@@ -104,22 +113,22 @@ body{
 }
 
 #item1,.about-item {
-  background: linear-gradient(90deg, #ffb213 7%, rgba(0,0,0,0.21052170868347342) 39%);
+  background: linear-gradient(90deg, #ffb213 -3%, rgba(0,0,0,0.21052170868347342) 39%);
   backdrop-filter: blur(20px);
   cursor: url('cursor/pointer.cur'), pointer;
 }
 #item2 {
-  background: linear-gradient(90deg, #05ff94 7%, rgba(0,0,0,0.21052170868347342) 39%);
+  background: linear-gradient(90deg, #05ff94 -3%, rgba(0,0,0,0.21052170868347342) 39%);
   backdrop-filter: blur(20px);
   cursor: url('cursor/pointer.cur'), pointer;
 }
 #item3 {
-  background: linear-gradient(90deg, #fc6535 7%, rgba(0,0,0,0.21052170868347342) 39%);
+  background: linear-gradient(90deg, #fc6535 -3%, rgba(0,0,0,0.21052170868347342) 39%);
   backdrop-filter: blur(20px);
   cursor: url('cursor/pointer.cur'), pointer;
 }
 #item4 {
-  background: linear-gradient(90deg, #fd8000 7%, rgba(0,0,0,0.21052170868347342) 39%);
+  background: linear-gradient(90deg, #fd8000 -3%, rgba(0,0,0,0.21052170868347342) 39%);
   backdrop-filter: blur(20px);
   cursor: url('cursor/pointer.cur'), pointer;
 }
