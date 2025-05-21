@@ -237,6 +237,7 @@ body {
   transition: var(--btn-transition);
   overflow: hidden;
   box-shadow: var(--btn-shadow);
+  cursor: url('cursor/pointer.cur'), pointer;
 }
 
 .ui-btn span {
