@@ -37,17 +37,33 @@ document.addEventListener('DOMContentLoaded', function () {
       video1.currentTime = 0;
     }, 1600);
   }
+
+  const goProyectos = () => {
+    setTimeout(function () {
+      let home = document.querySelector('.inventario-home');
+      let proyectos = document.querySelector('.inventario-proyectos');
+      let volver = document.querySelector('#volver-home');
+      home.classList.add('hidden');
+      proyectos.classList.remove('hidden');
+      volver.classList.remove('hidden');
+      video1.classList.add('hidden');
+      videoReversa.classList.remove('hidden');
+      video1.currentTime = 0;
+    }, 1600);
+  }
   
   const goBackMenu = () => {
     setTimeout(function () {
       let home = document.querySelector('.inventario-home');
       let about = document.querySelector('.inventario-about');
       let services = document.querySelector('.inventario-servicios');
+      let proyectos = document.querySelector('.inventario-proyectos');
       let volver = document.querySelector('#volver-home');
       const video1 = document.getElementById('background-video')
       home.classList.remove('hidden');
       about.classList.add('hidden');
       services.classList.add('hidden');
+      proyectos.classList.add('hidden');
       volver.classList.add('hidden');
       video1.classList.remove('hidden');
       videoReversa.classList.add('hidden');
@@ -72,6 +88,11 @@ document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('item2').addEventListener('click', () => {
     reproducirVideo(video1);
     goServices();
+  });
+
+  document.getElementById('item3').addEventListener('click', () => {
+    reproducirVideo(video1);
+    goProyectos();
   });
 });
 

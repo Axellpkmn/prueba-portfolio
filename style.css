@@ -90,6 +90,17 @@ body{
   width: 5em;
 }
 
+.proyecto{
+  position: absolute;
+  opacity: 0;
+  top: 0px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.proyecto:hover {
+  opacity: 1;
+}
+
 .inventario div {
   display: flex;
   flex-direction: column;
@@ -119,7 +130,7 @@ body{
   backdrop-filter: blur(20px);
   cursor: url('cursor/pointer.cur'), pointer;
 }
-#item3 {
+#item3, .proyectos-item {
   background: linear-gradient(90deg, #fc6535 -3%, rgba(0,0,0,0.21052170868347342) 39%);
   backdrop-filter: blur(20px);
   cursor: url('cursor/pointer.cur'), pointer;
