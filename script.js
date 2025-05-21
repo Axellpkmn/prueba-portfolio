@@ -51,6 +51,20 @@ document.addEventListener('DOMContentLoaded', function () {
       video1.currentTime = 0;
     }, 1600);
   }
+
+  const goContacto = () => {
+    setTimeout(function () {
+      let home = document.querySelector('.inventario-home');
+      let contacto = document.querySelector('.inventario-contacto');
+      let volver = document.querySelector('#volver-home');
+      home.classList.add('hidden');
+      contacto.classList.remove('hidden');
+      volver.classList.remove('hidden');
+      video1.classList.add('hidden');
+      videoReversa.classList.remove('hidden');
+      video1.currentTime = 0;
+    }, 1600);
+  }
   
   const goBackMenu = () => {
     setTimeout(function () {
@@ -58,12 +72,14 @@ document.addEventListener('DOMContentLoaded', function () {
       let about = document.querySelector('.inventario-about');
       let services = document.querySelector('.inventario-servicios');
       let proyectos = document.querySelector('.inventario-proyectos');
+      let contacto = document.querySelector('.inventario-contacto');
       let volver = document.querySelector('#volver-home');
       const video1 = document.getElementById('background-video')
       home.classList.remove('hidden');
       about.classList.add('hidden');
       services.classList.add('hidden');
       proyectos.classList.add('hidden');
+      contacto.classList.add('hidden');
       volver.classList.add('hidden');
       video1.classList.remove('hidden');
       videoReversa.classList.add('hidden');
@@ -93,6 +109,11 @@ document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('item3').addEventListener('click', () => {
     reproducirVideo(video1);
     goProyectos();
+  });
+
+  document.getElementById('item4').addEventListener('click', () => {
+    reproducirVideo(video1);
+    goContacto();
   });
 });
 
