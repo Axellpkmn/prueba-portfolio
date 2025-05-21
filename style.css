@@ -84,12 +84,10 @@ body{
 
 }
 
-.inventario-about h2 {
-  color: white;
-  font-family: cod;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
 
+
+.icono{
+  width: 5em;
 }
 
 .inventario div {
@@ -166,15 +164,6 @@ body{
   height: 100%;
   object-fit: cover; /* Hace que el video cubra todo el fondo sin distorsionarse */
 }
-
-.arriba{
-  z-index: 0;
-}
-
-.abajo{
-  z-index: -1;
-}
-
 
 
 /* glitch */
