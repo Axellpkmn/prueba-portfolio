@@ -3,6 +3,11 @@
   src: url(fonts/ModernWarfare.ttf);
 }
 
+html, body {
+    overflow: hidden; /* Evita el scroll */
+    height: 100%; /* Asegura que no haya desplazamiento */
+}
+
 body {
   display: flex;
   justify-content: flex-end;

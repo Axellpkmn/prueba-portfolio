@@ -150,12 +150,3 @@ const goBackMenu = () => {
     goContacto();
   });
 });
-
-
-
-
-
-
-
-
-
