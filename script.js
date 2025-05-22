@@ -10,82 +10,116 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
 
-  const goAbout = () => {
-    setTimeout(function () {
-      let home = document.querySelector('.inventario-home');
-      let about = document.querySelector('.inventario-about');
-      let volver = document.querySelector('#volver-home');
-      home.classList.add('hidden');
-      about.classList.remove('hidden');
-      volver.classList.remove('hidden');
-      video1.classList.add('hidden');
-      videoReversa.classList.remove('hidden');
-      video1.currentTime = 0;
-    }, 1700);
-  }
+const goAbout = () => {
+  setTimeout(function () {
+    let home = document.querySelector('.inventario-home');
+    let about = document.querySelector('.inventario-about');
+    let volver = document.querySelector('#volver-home');
+    
+    home.classList.add('hidden');
+    about.classList.remove('hidden');
+    volver.classList.remove('hidden');
+    video1.classList.add('hidden');
+    videoReversa.classList.remove('hidden');
 
-  const goServices = () => {
+    // Esperar 1 segundo antes de reiniciar el video
     setTimeout(function () {
-      let home = document.querySelector('.inventario-home');
-      let services = document.querySelector('.inventario-servicios');
-      let volver = document.querySelector('#volver-home');
-      home.classList.add('hidden');
-      services.classList.remove('hidden');
-      volver.classList.remove('hidden');
-      video1.classList.add('hidden');
-      videoReversa.classList.remove('hidden');
       video1.currentTime = 0;
-    }, 1600);
-  }
+    }, 1000); // 1000 milisegundos = 1 segundo
 
-  const goProyectos = () => {
-    setTimeout(function () {
-      let home = document.querySelector('.inventario-home');
-      let proyectos = document.querySelector('.inventario-proyectos');
-      let volver = document.querySelector('#volver-home');
-      home.classList.add('hidden');
-      proyectos.classList.remove('hidden');
-      volver.classList.remove('hidden');
-      video1.classList.add('hidden');
-      videoReversa.classList.remove('hidden');
-      video1.currentTime = 0;
-    }, 1600);
-  }
+  }, 1700); // Tiempo inicial antes de ejecutar el bloque principal
+};
 
-  const goContacto = () => {
+const goServices = () => {
+  setTimeout(function () {
+    let home = document.querySelector('.inventario-home');
+    let services = document.querySelector('.inventario-servicios');
+    let volver = document.querySelector('#volver-home');
+
+    home.classList.add('hidden');
+    services.classList.remove('hidden');
+    volver.classList.remove('hidden');
+    video1.classList.add('hidden');
+    videoReversa.classList.remove('hidden');
+
+    // Esperar 1 segundo antes de reiniciar el video
     setTimeout(function () {
-      let home = document.querySelector('.inventario-home');
-      let contacto = document.querySelector('.inventario-contacto');
-      let volver = document.querySelector('#volver-home');
-      home.classList.add('hidden');
-      contacto.classList.remove('hidden');
-      volver.classList.remove('hidden');
-      video1.classList.add('hidden');
-      videoReversa.classList.remove('hidden');
       video1.currentTime = 0;
-    }, 1600);
-  }
+    }, 1000);
+
+  }, 1600);
+};
+
+
+const goProyectos = () => {
+  setTimeout(function () {
+    let home = document.querySelector('.inventario-home');
+    let proyectos = document.querySelector('.inventario-proyectos');
+    let volver = document.querySelector('#volver-home');
+
+    home.classList.add('hidden');
+    proyectos.classList.remove('hidden');
+    volver.classList.remove('hidden');
+    video1.classList.add('hidden');
+    videoReversa.classList.remove('hidden');
+
+    // Esperar 1 segundo antes de reiniciar el video
+    setTimeout(function () {
+      video1.currentTime = 0;
+    }, 1000);
+
+  }, 1600);
+};
+
+
+const goContacto = () => {
+  setTimeout(function () {
+    let home = document.querySelector('.inventario-home');
+    let contacto = document.querySelector('.inventario-contacto');
+    let volver = document.querySelector('#volver-home');
+
+    home.classList.add('hidden');
+    contacto.classList.remove('hidden');
+    volver.classList.remove('hidden');
+    video1.classList.add('hidden');
+    videoReversa.classList.remove('hidden');
+
+    // Esperar 1 segundo antes de reiniciar el video
+    setTimeout(function () {
+      video1.currentTime = 0;
+    }, 1000);
+
+  }, 1600);
+};
+
   
-  const goBackMenu = () => {
+const goBackMenu = () => {
+  setTimeout(function () {
+    let home = document.querySelector('.inventario-home');
+    let about = document.querySelector('.inventario-about');
+    let services = document.querySelector('.inventario-servicios');
+    let proyectos = document.querySelector('.inventario-proyectos');
+    let contacto = document.querySelector('.inventario-contacto');
+    let volver = document.querySelector('#volver-home');
+    const video1 = document.getElementById('background-video');
+
+    home.classList.remove('hidden');
+    about.classList.add('hidden');
+    services.classList.add('hidden');
+    proyectos.classList.add('hidden');
+    contacto.classList.add('hidden');
+    volver.classList.add('hidden');
+    video1.classList.remove('hidden');
+    videoReversa.classList.add('hidden');
+
+    // Esperar 1 segundo más antes de reiniciar el video
     setTimeout(function () {
-      let home = document.querySelector('.inventario-home');
-      let about = document.querySelector('.inventario-about');
-      let services = document.querySelector('.inventario-servicios');
-      let proyectos = document.querySelector('.inventario-proyectos');
-      let contacto = document.querySelector('.inventario-contacto');
-      let volver = document.querySelector('#volver-home');
-      const video1 = document.getElementById('background-video')
-      home.classList.remove('hidden');
-      about.classList.add('hidden');
-      services.classList.add('hidden');
-      proyectos.classList.add('hidden');
-      contacto.classList.add('hidden');
-      volver.classList.add('hidden');
-      video1.classList.remove('hidden');
-      videoReversa.classList.add('hidden');
       videoReversa.currentTime = 0;
-    }, 1600);
-  }
+    }, 1000); // 1000 milisegundos = 1 segundo
+
+  }, 1600); // Ejecutar los cambios iniciales después de 1600 ms
+};
+
 
 
 
