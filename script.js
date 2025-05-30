@@ -156,10 +156,21 @@ function esDispositivoMovil() {
   return /Android|iPhone|iPad|iPod|Windows Phone|BlackBerry/i.test(navigator.userAgent);
 }
 
-window.addEventListener('DOMContentLoaded', () => {
+function mostrarErrorMovilSiCorresponde() {
+  const pantallaError = document.getElementById('pantalla-error');
+
   if (esDispositivoMovil()) {
-    // Oculta el contenido y muestra la pantalla de error
-    document.getElementById('pantalla-error').style.display = 'flex';
+    pantallaError.style.display = 'flex';
+  } else {
+    pantallaError.style.display = 'none';
   }
-});
+}
+
+// Ejecutar al cargar
+window.addEventListener('DOMContentLoaded', mostrarErrorMovilSiCorresponde);
+
+// Volver a ejecutar al girar o cambiar tamaño
+window.addEventListener('resize', mostrarErrorMovilSiCorresponde);
+window.addEventListener('orientationchange', mostrarErrorMovilSiCorresponde);
+
 
