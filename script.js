@@ -150,3 +150,16 @@ const goBackMenu = () => {
     goContacto();
   });
 });
+
+
+function esDispositivoMovil() {
+  return /Android|iPhone|iPad|iPod|Windows Phone|BlackBerry/i.test(navigator.userAgent);
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+  if (esDispositivoMovil()) {
+    // Oculta el contenido y muestra la pantalla de error
+    document.getElementById('pantalla-error').style.display = 'flex';
+  }
+});
+
